@@ -11,7 +11,8 @@ import SwiftUI
 struct BrainStation23_PracticalTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreenView()
+                .preferredColorScheme(.dark)
         }
     }
 }
