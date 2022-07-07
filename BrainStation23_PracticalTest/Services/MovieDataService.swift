@@ -67,7 +67,7 @@ class MovieDataService{
                     onComplete(nil,"Unable to load data.")
                     break
                 }
-            } receiveValue: {[weak self](value) in
+            } receiveValue: {(value) in
                 onComplete(UIImage(data: value),"")
             }
             .store(in: &subscriptions)
